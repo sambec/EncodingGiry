@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter from Thomas Paine to Benjamin Franklin</title>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Oxford Text Archive</distributor>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Collected Correspondence of Thomas Paine</title>
+                  <editor>John Smith</editor>
+                  <imprint>
+                     <pubPlace>New York</pubPlace>
+                     <publisher>Historical Society Press</publisher>
+                     <date>1945</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <!-- Correspondence metadata -->
+         <corresp>
+            <!-- Information on the sender and recipient -->
+            <correspDesc>
+               <correspAction type="sent">
+                  <persName>Thomas Paine</persName>
+                  <date when="1776-01-10"/>
+                  <placeName>Philadelphia</placeName>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Benjamin Franklin</persName>
+                  <placeName>London</placeName>
+               </correspAction>
+            </correspDesc>
+
+            <!-- The actual content of the letter -->
+            <div type="letter">
+               <opener>
+                  <!-- Date and salutation -->
+                  <dateline>Philadelphia, 10 January 1776</dateline>
+                  <salute>Dear Sir,</salute>
+               </opener>
+
+               <body>
+                  <p>I hope this letter finds you in good health. I have been considering the current situation between the colonies and the British government...</p>
+                  <p>As you know, the time has come for decisive action. The colonies must unite...</p>
+               </body>
+
+               <closer>
+                  <!-- Closing remarks and signature -->
+                  <salute>Yours sincerely,</salute>
+                  <signed>Thomas Paine</signed>
+               </closer>
+            </div>
+         </corresp>
+      </body>
+   </text>
+</TEI>
