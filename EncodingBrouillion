@@ -63,3 +63,20 @@
       </body>
    </text>
 </TEI>
+
+   <!-- Explication des éléments utilisés :
+
+      <corresp> : Élément principal pour encadrer la lettre entière.
+      <correspDesc> : Contient des informations descriptives sur la lettre. Chaque action (envoyée ou reçue) est encodée avec <correspAction>.
+         <correspAction type="sent"> : Identifie qui a envoyé la lettre, avec la date et le lieu d'envoi.
+         <correspAction type="received"> : Identifie le destinataire et le lieu où la lettre a été reçue.
+      <div type="letter"> : Structure le texte de la lettre avec un type spécifique de "lettre".
+      <opener> : Regroupe les éléments de l’en-tête de la lettre, comme la date (<dateline>) et la salutation (<salute>).
+      <body> : Contient le corps de la lettre, qui peut être divisé en plusieurs paragraphes.
+      <closer> : Contient la formule de clôture et la signature (<signed>).
+
+   Autres éléments optionnels :
+
+      <postscript> : Peut être utilisé pour encoder un post-scriptum à la fin de la lettre.
+      <fw> (floating text) : Pour inclure des éléments flottants comme une annotation ou une note de bas de page.
+      <placeName> : Utilisé pour les noms de lieux dans les métadonnées, pour préciser le lieu d'envoi ou de réception. -->
