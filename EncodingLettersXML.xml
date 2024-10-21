@@ -1,98 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-	<fileDesc>
-  	<titleStmt>
-    	<title>Correspondances concernant la construction du Manuel de Diplomatique d'Arthur Giry</title>
-  	</titleStmt>
-  	<publicationStmt>
-    	<authority>Sarah Ambec</authority>
-  	  <date>octobre 2024</date>
-  	</publicationStmt>
-  	<sourceDesc>
-    	<msDesc>
-      	<msIdentifier>
-        	<settlement>Paris</settlement>
-        	<institution>Archives Nationales</institution>
-        	<idno>93AJ/264</idno>
-      	</msIdentifier>
-    	</msDesc>
-  	</sourceDesc>
-	</fileDesc>
-  </teiHeader>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Correspondances concernant la construction du Manuel de Diplomatique d'Arthur
+					Giry</title>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Sarah Ambec</authority>
+				<date>octobre 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<settlement>Paris</settlement>
+						<institution>Archives Nationales</institution>
+						<idno>93AJ/264</idno>
+					</msIdentifier>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
 
-  <text>
-	<body>
-  	<!-- Lettre 1: Théophile Dufour -->
-  	<div type="letter">
-  	  <opener>
-  	    <dateline><placeName>Genève</placeName>, le 14 novembre 1890</dateline>
-  	    <salute>Mon cher confrère et ami,</salute>
-  	  </opener>
+	<text>
+		<body>
+			<!-- Lettre 1: Théophile Dufour -->
+			<div type="letter">
+				<head> Papier à lettre de la Bibliothèque publique de Genève </head>
+				<opener>
+					<dateline><placeName>Genève</placeName>, le 14 novembre 1890</dateline>
+					<salute>Mon cher confrère et ami,</salute>
+				</opener>
 
-    	<p>Veuillez m’excuser de n’avoir pas encore répondu à votre demande. Pendant les trois semaines qui viennent de s’écouler, le peu de loisir que me laisse la Bibliothèque a été absorbé par des Comités électoraux qui tenaient séance tous les jours. Aussi ai-je maintenant une série de lettres en retard.</p>
-   	 
-    	<p>Mon exemplaire personnel de l’<title>Indicateur d’histoire</title> nuse étant encore bâclé, je vous envoie la partie du n°3 de 1886 où se trouve le petit article de Monseigneur Brandstetter que vous désirez. Vous verrez, dès les premiers mots, qu’il se réfère à un mémoire plus étendu publié par lui dans le tome 25 du <title>Geschiches feund</title> <hi rend="underline">[souligné en rouge]</hi>, qui est l’organe de la vocicore d’honneur des cieux cantons de Lucernes Uni, Schuzz, Vutenvalden et Zug. Ce mémoire, qui date de 1870 et qui comprend 41 pages est intitulé <title>Kurze Anleitung zum Vebensehzen der Dahen, mit besonderer Rücksicht auf schweizeriche Urkunden</title>. Si vous ne trouvez pas à Paris la collection du <title>Geichichtefeund</title>, je suis prêt à vous envoyer ce tome 25 en communication.</p>
+				<p>Veuillez m’excuser de n’avoir pas encore répondu à votre demande. Pendant les
+					trois semaines qui viennent de s’écouler, le peu de loisir que me laisse la
+					Bibliothèque a été absorbé par des Comités électoraux qui tenaient séance tous
+					les jours. Aussi ai-je maintenant une série de lettres en retard.</p>
 
-    	<p>En ce qui concerne l’ancien diocèse de Genève, et plus tard la République de Genève, la question des styles est des plus simples : jusqu’en 1306, style pascal; - de 1306 à 1575, style natal. Voir <title>Régeste genevois</title>, n°1565 (l’ouvrage se trouve à la Bibliothèque de l’Ecole des Chartes). En 1701, introduction du calendrier grégorien : Voir [...] de la Société de l’histoire de Genève, t.XXII, p.348-357 (même observation).</p>
+				<p>Mon exemplaire personnel de l’<title>Indicateur d’histoire</title> nuse étant
+					encore bâclé, je vous envoie la partie du n°3 de 1886 où se trouve le petit
+					article de Monseigneur Brandstetter que vous désirez. Vous verrez, dès les
+					premiers mots, qu’il se réfère à un mémoire plus étendu publié par lui dans le
+					tome 25 du <title>Geschiches feund</title>, qui est l’organe de la vocicore
+					d’honneur des cieux cantons de Lucernes Uni, Schuzz, Vutenvalden et Zug. Ce
+					mémoire, qui date de 1870 et qui comprend 41 pages est intitulé <title>Kurze
+						Anleitung zum Vebensehzen der Dahen, mit besonderer Rücksicht auf
+						schweizeriche Urkunden</title>. Si vous ne trouvez pas à Paris la collection
+					du <title>Geichichtefeund</title>, je suis prêt à vous envoyer ce tome 25 en
+					communication.</p>
 
-    	<p>Pour les autres cantons, je ne suis pas en mesure de vous donner des renseignements aussi certains. Mais, si vous le désirez, il me sera très facile d’écrire à ce sujet à quelques amis de Zurich, Berne, Bâle, Fribourg et Lausanne. Je crois que, de cette façon, vous auriez du nouveau et du solide, tandis que les Manuels ne font guère, d’habitude, que se copier les uns les autres. Usez librement de moi, je serai très heureux d’être toujours à votre disposition.</p>
+				<p>En ce qui concerne l’ancien diocèse de Genève, et plus tard la République de
+					Genève, la question des styles est des plus simples : jusqu’en 1306, style
+					pascal; - de 1306 à 1575, style natal. Voir <title>Régeste genevois</title>,
+					n°1565 (l’ouvrage se trouve à la Bibliothèque de l’Ecole des Chartes). En 1701,
+					introduction du calendrier grégorien : Voir [...] de la Société de l’histoire de
+					Genève, t.XXII, p.348-357 (même observation).</p>
 
-    	<p>Veuillez me rappeler au souvenir de Madame Giry et me croire, je vous prie, votre bien dévoué.</p>
+				<p>Pour les autres cantons, je ne suis pas en mesure de vous donner des
+					renseignements aussi certains. Mais, si vous le désirez, il me sera très facile
+					d’écrire à ce sujet à quelques amis de Zurich, Berne, Bâle, Fribourg et
+					Lausanne. Je crois que, de cette façon, vous auriez du nouveau et du solide,
+					tandis que les Manuels ne font guère, d’habitude, que se copier les uns les
+					autres. Usez librement de moi, je serai très heureux d’être toujours à votre
+					disposition.</p>
 
-    	<closer>
-      	<signed>Th Dufour</signed>
-    	</closer>
+				<closer>
+					<salute>Veuillez me rappeler au souvenir de Madame Giry et me croire, je vous
+						prie, votre bien dévoué.</salute>
+					<signed>Th Dufour</signed>
+				</closer>
 
-    	<postscript>
-      	<p>L’an dernier, je suis allé trois fois à Paris, sans avoir pu, malheureusement, aller vous faire une visite. Il est vrai que, la seconde fois, je demeurais à la campagne, près de Meudon, que la troisième, j’ai pris l’influenza et que la première a été absorbée par l’Exposition et par le mariage d’un de mes parents. Cette année, je me suis reposé! Ce long voyage que j’ai fait si souvent, commence à me fatiguer beaucoup.</p>
-      	<p>Prière de ne pas égarer les quelques pages de l’<title>Augriger</title> que je vous envoie. C’est une collection très difficile à compléter en cas de perte d’un numéro.</p>
-    	</postscript>
-  	</div>
+				<postscript>
+					<p>L’an dernier, je suis allé trois fois à Paris, sans avoir pu,
+						malheureusement, aller vous faire une visite. Il est vrai que, la seconde
+						fois, je demeurais à la campagne, près de Meudon, que la troisième, j’ai
+						pris l’influenza et que la première a été absorbée par l’Exposition et par
+						le mariage d’un de mes parents. Cette année, je me suis reposé! Ce long
+						voyage que j’ai fait si souvent, commence à me fatiguer beaucoup.</p>
+					<p>Prière de ne pas égarer les quelques pages de l’<title>Augriger</title> que
+						je vous envoie. C’est une collection très difficile à compléter en cas de
+						perte d’un numéro.</p>
+				</postscript>
+			</div>
 
-  	<!-- Lettre 2: Léon Dorez -->
-  	<div type="letter">
-    	<opener>
-      	<dateline><placeName>Rome</placeName>, le 25 décembre 1891</dateline>
-      	<salute>Cher Monsieur,</salute>
-    	</opener>
+			<!-- Lettre 2: Léon Dorez -->
+			<div type="letter">
+				<opener>
+					<dateline><placeName>Rome</placeName>, le 25 décembre 1891</dateline>
+					<salute>Cher Monsieur,</salute>
+				</opener>
 
-    	<p>Je vous remercie beaucoup du renseignement que vous m’envoyez, bien qu’il soit négatif, comme je m’y attendais.</p>
+				<p>Je vous remercie beaucoup du renseignement que vous m’envoyez, bien qu’il soit
+					négatif, comme je m’y attendais.</p>
 
-    	<p>Quant à celui que vous ai expédié un peu au hasard, je suis heureux qu’il vous ait évité une recherche de plus. La statue de St Hyppolyte, découverte en 1551, doit être au Latran depuis ce temps, ou à peu près; en tout cas, elle y est aujourd’hui. Paul Allard, <title>Les Dernières persécutions du troisième siècle</title>, Paris, Lecoffre, 1887, in 8° p.93 n°3 renvoi aux principaux articles bibliographiques, entre autres aux observations de de Rossi dans son <title>Bulletin</title>, 1881, p.29 en 1882, PP.42-43, ainsi qu’à Raus. Le mieux, dans un livre comme le vôtre, serait, je crois, de renvoyer à ce dernier auteur qui donne dans sa <title>Real-Encyclopädie der christkichen Altchümer</title>, Fribourg en Brisgau, 1882, 8°-, t.I, p.660-664, une sorte de facsimilé de l’inscriptions accompagné d’une transcription et d’un dessin représentant la statue.</p>
+				<p>Quant à celui que vous ai expédié un peu au hasard, je suis heureux qu’il vous
+					ait évité une recherche de plus. La statue de St Hyppolyte, découverte en 1551,
+					doit être au Latran depuis ce temps, ou à peu près; en tout cas, elle y est
+					aujourd’hui. Paul Allard, <title>Les Dernières persécutions du troisième
+						siècle</title>, Paris, Lecoffre, 1887, in 8° p.93 n°3 renvoi aux principaux
+					articles bibliographiques, entre autres aux observations de de Rossi dans son
+						<title>Bulletin</title>, 1881, p.29 en 1882, PP.42-43, ainsi qu’à Raus. Le
+					mieux, dans un livre comme le vôtre, serait, je crois, de renvoyer à ce dernier
+					auteur qui donne dans sa <title>Real-Encyclopädie der christkichen
+						Altchümer</title>, Fribourg en Brisgau, 1882, 8°-, t.I, p.660-664, une sorte
+					de facsimilé de l’inscriptions accompagné d’une transcription et d’un dessin
+					représentant la statue.</p>
 
-    	<p>Heureux d’être entré en relations épistolaires avec vous, j’espère que vous voudrez bien nous adresser à moi en toute autre circonstance analogue à celle-ci, et je vous prie d’agréer, pour vous et votre famille, les meilleurs vœux de nouvelle année de</p>
+				<p>Heureux d’être entré en relations épistolaires avec vous, j’espère que vous
+					voudrez bien nous adresser à moi en toute autre circonstance analogue à
+					celle-ci, et je vous prie d’agréer, pour vous et votre famille, les meilleurs
+					vœux de nouvelle année de</p>
 
-    	<closer>
-      	<salute>Votre élève dévoué,</salute>
-    	  <signed>Léon Dorez</signed>
-    	</closer>
-  	</div>
+				<closer>
+					<salute>Votre élève dévoué,</salute>
+					<signed>Léon Dorez</signed>
+				</closer>
+			</div>
 
-  	<!-- Lettre 3: Georges Guigue -->
-  	<div type="letter">
-    	<opener>
-      	<dateline><placeName>Lyon</placeName>, le 20 mai 1890</dateline>
-      	<salute>Mon cher maître,</salute>
-    	</opener>
-
-    	<p>Je suis en retard comme toujours, vous ne sauriez vous imaginer combien je suis pris dans ma nouvelle et grande boîte, ce qu’il faut de dimanche et de mouvement pour arriver à une collection définitive grâce à notre illustre architecte, et le reste.</p>
-
-    	<p>Bref, il me reste juste 80 exemplaires de l’<title>Obituaire de St Jean</title> dont un grand papier, le seul libraire qui en ait encore est Ebrain et ce n’est que 6 ou 7 qu’il me cèdera certainement si je les lui demande comme cela 6, avec le monopole.</p>
-
-    	<p>La maladie de ma femme dont je vous parlais si peu de cette satanée ménose si fréquente maintenant, elle s’était un peu surmenée avec les enfants et du jour au lendemain se sont [...] les axes qu’il a fallu [...] énergiquement.</p>
-
-    	<p>Je n’ai rien de rien pour le commencement de l’année, en Lyonnais c’est Pâques je ne suis pas encore arrivé à mettre la main sur l’exception que pourtant je soupçonne. Par contre quelques dates de saints varient comme la Sainte Marguerite que vous trouverez dans les <title>Tard-Venus</title>.</p>
-
-    	<closer>
-      	<signed>Georges Guigue</signed>
-    	</closer>
-
-    	<postscript>
-      	<p>Vous ai-je dit que le second volume du <title>Cartulaire Lyonnais</title> est en route? [...]</p>
-    	</postscript>
-  	</div>
-	</body>
-  </text>
+			<!-- Lettre 3: Georges Guigue -->
+			<div type="letter">
+				<head> Papier à lettre des Archives départementales de la préfecture du Rhône </head>
+				<opener>
+					<dateline><placeName>Lyon</placeName>, le 20 mai 1890</dateline>
+					<salute>Mon cher maître,</salute>
+				</opener>
+				<p>Je suis en retard comme toujours, vous ne sauriez vous imaginer combien je suis
+					pris dans ma nouvelle et grande boîte, ce qu’il faut de dimanche et de mouvement
+					pour arriver à une collection définitive grâce à notre illustre architecte, et
+					le reste.</p>
+				<p>Bref, il me reste juste 80 exemplaires de l’<title>Obituaire de St Jean</title>
+					dont un grand papier, le seul libraire qui en ait encore est Ebrain et ce n’est
+					que 6 ou 7 qu’il me cèdera certainement si je les lui demande comme cela 6, avec
+					le monopole. Enfin faites ce que vous jugerez bon, ce sera bien fait.</p>
+				<p>La maladie de ma femme dont je vous parlais si peu de cette satanée ménose si
+					fréquente maintenant, elle s’était un peu surmenée avec les enfants et du jours
+					au lendemain se sont […] les axes qu’il a fallu […] énergiquement; j’ai eu là
+					moi aussi une fière secousse morale, enfin le docteur aidant tout est pour le
+					mieux et ma belle mère une des causes aussi un peu assagie. </p>
+				<p>Je n’ai rien de rien pour le commencement de l’année, en Lyonnais c’est Pâques je
+					ne suis pas encore arrivé à mettre la main sur l’exception que pourtant je
+					soupçonne. Par contre quelques dates de saints varient comme la Sainte
+					Marguerite que vous trouverez dans les <title>Tard-Venus</title>pour l’incendie
+					de Mathison; je soupçonne aussi sainte Madeleine de s’étendre un peu, mais ne
+					suis pas arrivé à mettre la main sur une preuve décisive. .</p>
+				<p> Savez-vous qq. chose de Montmarte? Il y a un an que j’avais avec à D’un nouveau
+					cadre pour la rédaction de l’inventaire avec le premier envoi de copie et il
+					attend la 10° bonne feuille pour s'en apercevoir, il demande maintenant pourquoi
+					je n’ai pas suivi le premier qui lui était adressé avant la rédaction. Et de
+					Rozière? Voilà bien longtemps que je n’ai eu de nouvelles de Bellemain
+					j’attendais toujours le résultat de cette fichue commission pour lui écrire, si
+					cette demande peut passer j’espère avoir bientôt une bonne coude par Millard ,
+					notre sénateur, à qui j’ai eu l’occasion de fournir qq. notes pour l’affaire
+					Carnot. Dans les papiers de la cour j’ai en effet mis la main sur la
+					correspondance de Villeroy et autres au marquis de Rochehanne bientandre
+					gaunemen du Lyonnais, vous voyez d’ici ce qu’il peut y avoir pour l’histoire du
+					régime de Lyonnais dont est M.Carnot. Pour mon compte j’aimerais mieux en tirer
+					un volume pour les documents inédits, mais il faudrait encore des démarches, et
+					pour le moment il y en a bien assez de toutes celles que je suis obligé de faire
+					et que je vous demande aussi à vous ami, pour ma mère. Vous voyez toute ma
+					misère, je bavarde et la besogne marche. Merci et de tout coeur votre </p>
+				<closer>
+					<signed>Georges Guigue</signed>
+				</closer>
+				<postscript>
+					<p> Vous ai-je dis que le second volume du <title>Cartulaire Lyonnais</title>
+						est en route je le parle jeudi complet à l’[...] encore une fameuse table à
+						autre chose … toujours sans le cours je déniche ça et là les papiers de
+						chevaliers de Cogolin, correspondant de Voltaire, Fiesdente il est autres,
+						il y a là une suivie d'articles lus au mieux si vous avez qq. embarrassant à
+						une revue quelconque je vous les adresserai. L’édition des lettres de
+						Catherine est bien sérieuse, je leur ai envoyé un passage de notes et je ne
+						sais si elles sont arrivés si les sénateurs, en tout cas j’ai été bien sot
+						de lui faire tenir mes 18 lettres sans se pas le ministère. J’écris
+						aujourd’hui aussi à Montaiglon mais une lettre effarante j’ai eu la sottise
+						de montrer le dessin original de benisson à M.Rondat, et il ne le chisse
+						malgrè la parole donnée, enfin cela fera peut-être comme la peste. Est ce
+						bête ces histoires et pourtant elles sont journalières. </p>
+				</postscript>
+			</div>
+		</body>
+	</text>
 </TEI>
-
-
