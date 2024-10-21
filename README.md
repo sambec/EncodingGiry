@@ -17,7 +17,7 @@ The purpose of this project is to:
 3. **Facilitate analysis**: Using XML to structure the content enables thematic and contextual analysis, which can support deeper research into Giry's contributions to history and diplomatics.
 4. **Provide open access**: All XML files are published under an open license to encourage further research and academic use.
 
-## 📂 Repository Structure
+<!-- ## 📂 Repository Structure
 
 - **`/letters/`**: This folder contains the XML-encoded letters received by Arthur Giry.
   - Each file represents a single letter encoded in XML following TEI (Text Encoding Initiative) guidelines.
@@ -26,8 +26,7 @@ The purpose of this project is to:
 - **`/schema/`**: This folder contains the DTD and schema definitions used for encoding the XML files.
   - Example: `giry_correspondence.dtd`
 
-- **`/resources/`**: Supporting materials, such as the digitized scans of the letters, bibliography, and further readings about Giry's work.
-
+- **`/resources/`**: Supporting materials, such as the digitized scans of the letters, bibliography, and further readings about Giry's work. -->
 ## ⚙️ Encoding Standards
 
 All letters in this repository are encoded in **XML** using the **TEI guidelines** to ensure accurate representation of the structure and content of the original documents. The encoding includes:
@@ -37,9 +36,9 @@ All letters in this repository are encoded in **XML** using the **TEI guidelines
 
 ## 🛠️ How to Use This Repository
 
-1. **Browse the XML files** in the `/letters/` folder to read through the encoded letters.
+1. **Browse the XML files** to read through the encoded letters.
 2. **Download and parse** the XML data for further research or integration with digital humanities projects.
-3. Use the **schema** in the `/schema/` folder to validate the structure of the XML files or extend the encoding framework for your own research.
+<!-- 3. Use the **schema** in the `/schema/` folder to validate the structure of the XML files or extend the encoding framework for your own research. -->
 
 ## 🏛️ Historical Significance
 

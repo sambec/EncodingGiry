@@ -2,10 +2,11 @@
   <teiHeader>
 	<fileDesc>
   	<titleStmt>
-    	<title>Correspondances concernant la construction du Manuel de Diplomatique</title>
+    	<title>Correspondances concernant la construction du Manuel de Diplomatique d'Arthur Giry</title>
   	</titleStmt>
   	<publicationStmt>
-    	<distributor>Archives Nationales</distributor>
+    	<authority>Sarah Ambec</authority>
+  	  <date>octobre 2024</date>
   	</publicationStmt>
   	<sourceDesc>
     	<msDesc>
@@ -23,10 +24,10 @@
 	<body>
   	<!-- Lettre 1: Théophile Dufour -->
   	<div type="letter">
-    	<opener>
-      	<dateline>Genève, le 14 novembre 1890</dateline>
-      	<salute>Mon cher confrère et ami,</salute>
-    	</opener>
+  	  <opener>
+  	    <dateline><placeName>Genève</placeName>, le 14 novembre 1890</dateline>
+  	    <salute>Mon cher confrère et ami,</salute>
+  	  </opener>
 
     	<p>Veuillez m’excuser de n’avoir pas encore répondu à votre demande. Pendant les trois semaines qui viennent de s’écouler, le peu de loisir que me laisse la Bibliothèque a été absorbé par des Comités électoraux qui tenaient séance tous les jours. Aussi ai-je maintenant une série de lettres en retard.</p>
    	 
@@ -39,7 +40,7 @@
     	<p>Veuillez me rappeler au souvenir de Madame Giry et me croire, je vous prie, votre bien dévoué.</p>
 
     	<closer>
-      	<salute>Th Dufour</salute>
+      	<signed>Th Dufour</signed>
     	</closer>
 
     	<postscript>
@@ -51,7 +52,7 @@
   	<!-- Lettre 2: Léon Dorez -->
   	<div type="letter">
     	<opener>
-      	<dateline>Rome, le 25 décembre 1891</dateline>
+      	<dateline><placeName>Rome</placeName>, le 25 décembre 1891</dateline>
       	<salute>Cher Monsieur,</salute>
     	</opener>
 
@@ -62,14 +63,15 @@
     	<p>Heureux d’être entré en relations épistolaires avec vous, j’espère que vous voudrez bien nous adresser à moi en toute autre circonstance analogue à celle-ci, et je vous prie d’agréer, pour vous et votre famille, les meilleurs vœux de nouvelle année de</p>
 
     	<closer>
-      	<salute>Votre élève dévoué, Léon Dorez</salute>
+      	<salute>Votre élève dévoué,</salute>
+    	  <signed>Léon Dorez</signed>
     	</closer>
   	</div>
 
   	<!-- Lettre 3: Georges Guigue -->
   	<div type="letter">
     	<opener>
-      	<dateline>Lyon, le 20 mai 1890</dateline>
+      	<dateline><placeName>Lyon</placeName>, le 20 mai 1890</dateline>
       	<salute>Mon cher maître,</salute>
     	</opener>
 
@@ -82,7 +84,7 @@
     	<p>Je n’ai rien de rien pour le commencement de l’année, en Lyonnais c’est Pâques je ne suis pas encore arrivé à mettre la main sur l’exception que pourtant je soupçonne. Par contre quelques dates de saints varient comme la Sainte Marguerite que vous trouverez dans les <title>Tard-Venus</title>.</p>
 
     	<closer>
-      	<salute>Georges Guigue</salute>
+      	<signed>Georges Guigue</signed>
     	</closer>
 
     	<postscript>
