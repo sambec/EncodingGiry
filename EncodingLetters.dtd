@@ -1,1 +1,36 @@
-<!--where i will put the dtd file-->
+<!--The header display informations on this encoding project-->
+<!ELEMENT TEI (teiHeader, text)>
+<!ELEMENT teiHeader (fileDesc)>
+<!ELEMENT fileDesc (titleStmt, publicationStmt, sourceDesc)>
+<!ELEMENT titleStmt (title)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publicationStmt (distributor)>
+<!ELEMENT distributor (#PCDATA)>
+<!ELEMENT sourceDesc (msDesc)>
+<!ELEMENT msDesc (msIdentifier)>
+<!ELEMENT msIdentifier (settlement, institution, idno)>
+<!ELEMENT settlement (#PCDATA)>
+<!ELEMENT institution (#PCDATA)>
+<!ELEMENT idno (#PCDATA)>
+
+<!---The body is the main part of this project, it contains the transcription and the encoded metadata-->
+<!ELEMENT text (body)>
+<!ELEMENT body (div+)>
+<!ELEMENT div (opener, p+, closer?, postscript?)>
+<!ATTLIST div type CDATA #REQUIRED>
+<!ELEMENT opener (dateline, salute)>
+<!ELEMENT dateline (#PCDATA)>
+<!ELEMENT salute (#PCDATA)>
+
+<!ELEMENT p (#PCDATA|title|hi|name|date)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT hi (#PCDATA)>
+<!ATTLIST hi rend CDATA #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT closer (salute)>
+<!ELEMENT postscript (p+)>
+
+<!ELEMENT title (#PCDATA)>
+
