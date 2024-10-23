@@ -17,16 +17,17 @@ The purpose of this project is to:
 3. **Facilitate analysis**: Using XML to structure the content enables thematic and contextual analysis, which can support deeper research into Giry's contributions to history and diplomatics.
 4. **Provide open access**: All XML files are published under an open license to encourage further research and academic use.
 
-<!-- ## 📂 Repository Structure
+## 📂 Repository Structure
 
-- **`/letters/`**: This folder contains the XML-encoded letters received by Arthur Giry.
+- **`/LettersEncoding/`**: This folder contains the XML-encoded letters received by Arthur Giry.
   - Each file represents a single letter encoded in XML following TEI (Text Encoding Initiative) guidelines.
-  - Example: `letter_1886_09_23.xml` would represent a letter sent to Giry on September 23, 1886.
+  - Example: `theophile_dufour.xml` would represent a letter sent to Arthur Giry by Théophile Dufour.
   
-- **`/schema/`**: This folder contains the DTD and schema definitions used for encoding the XML files.
+- **`/EncodingSchema/`**: This folder contains the DTD and schema definitions used for encoding the XML files.
   - Example: `giry_correspondence.dtd`
 
-- **`/resources/`**: Supporting materials, such as the digitized scans of the letters, bibliography, and further readings about Giry's work. -->
+- **`/Resources/`**: Supporting materials, such as the digitized scans of the letters, bibliography, and further readings about Giry's work.
+
 ## ⚙️ Encoding Standards
 
 All letters in this repository are encoded in **XML** using the **TEI guidelines** to ensure accurate representation of the structure and content of the original documents. The encoding includes:

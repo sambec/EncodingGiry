@@ -6,8 +6,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Correspondances concernant la construction du Manuel de Diplomatique d'Arthur
-					Giry</title>
+				<title>Lettre de Théophile Dufour à Arthur Giry dans le cadre de la constitution du Manuel de Diplomatique</title>
 			</titleStmt>
 			<publicationStmt>
 				<authority>Sarah Ambec</authority>
@@ -21,8 +20,63 @@
 						<idno>93AJ/264</idno>
 					</msIdentifier>
 				</msDesc>
-			</sourceDesc>
-		</fileDesc>
+					<correspDesc>
+						<correspAction type="sent">
+							<persName>Théophile Dufour</persName>
+							<placeName>Genève</placeName>
+							<date when="1890-11-14"/>
+						</correspAction>
+				</correspDesc>
+			<!-- </sourceDesc> -->
+			<publicationStmt>
+            <distributor ref="https://orcid.org/0000-0003-2763-0056">Katarzyna Anna
+               Kapitan</distributor>
+            <pubPlace>Paris</pubPlace>
+            <date when="2024-10-16"/>
+            <availability>
+               <licence>This file is available under a Creative Commons Attribution 4.0 icence: <ref
+                     type="url" target="https://creativecommons.org/licenses/by/4.0/deed.en"
+                     >https://creativecommons.org/licenses/by/4.0/deed.en</ref>.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>The Bodleian First Folio: A digital facsimile of the First Folio of
+                  Shakespeare's plays, <idno>Bodleian Arch. G c.7.</idno></title>
+               <ref type="url" target="http://firstfolio.bodleian.ox.ac.uk/"
+                  >http://firstfolio.bodleian.ox.ac.uk/</ref>
+               <publisher>University of Oxford</publisher>
+               <availability>
+                  <licence>The images and text of the First Folio are released under a Creative
+                     Commons Attribution 3.0 Unported (CC BY 3.0) licence.</licence>
+               </availability>
+               <date/>
+            </bibl>
+         </sourceDesc>
+		<!-- </fileDesc> -->
+		<!-- <encodingDesc>
+         <p> This file has been created by <persName
+               >Sarah Ambec</persName> in <date>2019</date> for the masters thesis
+               <title>Arthur Giry</title> at <orgName
+               ref="https://www.wikidata.org/wiki/Q273570">École nationale des chartes -
+               PSL</orgName> in <placeName ref="https://www.wikidata.org/wiki/Q90"
+            >Paris</placeName>. The transcription uses the materials published on <title>The
+               Bodleian First Folio: A digital facsimile of the First Folio of Shakespeare's
+               plays</title>, <ref type="url" target="http://firstfolio.bodleian.ox.ac.uk/"
+               >http://firstfolio.bodleian.ox.ac.uk/</ref>.</p>
+         <p>The file contains a transcription of page 101, where a new play <title>Much Ado About
+               Nothing</title> begins. The transcription has been divided into Acts and Scenes, as
+            well as columns reflecting the layout of the page. </p>
+         <editorialDecl>
+            <correction status="low">
+               <p>The text has not been corrected.</p>
+            </correction>
+         </editorialDecl>
+      </encodingDesc> -->
+      <revisionDesc>
+         <change when="2024-10-22">Proofread by <persName
+               ref="https://orcid.org/0000-0003-2763-0056">KAK</persName>.</change>
+    	</revisionDesc>
 	</teiHeader>
 
 	<text>
@@ -161,8 +215,9 @@
 					un volume pour les documents inédits, mais il faudrait encore des démarches, et
 					pour le moment il y en a bien assez de toutes celles que je suis obligé de faire
 					et que je vous demande aussi à vous ami, pour ma mère. Vous voyez toute ma
-					misère, je bavarde et la besogne marche. Merci et de tout coeur votre </p>
+					misère, je bavarde et la besogne marche.</p>
 				<closer>
+					<salute>Merci et de tout coeur votre </salute>
 					<signed>Georges Guigue</signed>
 				</closer>
 				<postscript>
