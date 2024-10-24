@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI SYSTEM "EncodedLetters.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettre de Léon Dorez à Arthur Giry concernant la constitution du Manuel de
+                    Diplomatique (1894)</title>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Sarah Ambec</distributor>
+                <date>Octobre 2024</date>
+                <availability>
+                    <licence>This file is available under a Creative Commons Attribution 4.0
+                        licence: <ref type="url"
+                            target="https://creativecommons.org/licenses/by/4.0/deed.en"
+                            >https://creativecommons.org/licenses/by/4.0/deed.en</ref>. </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <institution>Archives Nationales</institution>
+                        <idno>93AJ/264</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>This transcription was created by <persName>Sarah Ambec</persName> in
+                    <date>2019</date> for her master’s thesis, a biography of <persName>Arthur
+                    Giry</persName>, written at <orgName ref="https://www.sorbonne-universite.fr/"
+                    >Sorbonne University</orgName>, Paris. The letters have now been encoded in XML
+                in <date>2024</date> as part of a digital humanities project at <orgName
+                    ref="https://www.chartes.psl.eu/">École nationale des chartes -
+                PSL</orgName>.</p>
+        </encodingDesc>
+
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>Léon Dorez</persName>
+                    <placeName>Rome</placeName>
+                    <date when="1891-12-25"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>Arthur Giry</persName>
+                    <placeName>Paris</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+
+    </teiHeader>
+    <text>
+        <body>
+            <opener>
+                <dateline><placeName>Rome</placeName>, le 25 décembre 1891</dateline>
+                <salute>Cher Monsieur,</salute>
+            </opener>
+
+            <p>Je vous remercie beaucoup du renseignement que vous m’envoyez, bien qu’il soit
+                négatif, comme je m’y attendais.</p>
+
+            <p>Quant à celui que vous ai expédié un peu au hasard, je suis heureux qu’il vous ait
+                évité une recherche de plus. La statue de St Hyppolyte, découverte en 1551, doit
+                être au Latran depuis ce temps, ou à peu près; en tout cas, elle y est aujourd’hui.
+                Paul Allard, <title>Les Dernières persécutions du troisième siècle</title>, Paris,
+                Lecoffre, 1887, in 8° p.93 n°3 renvoi aux principaux articles bibliographiques,
+                entre autres aux observations de de Rossi dans son <title>Bulletin</title>, 1881,
+                p.29 en 1882, PP.42-43, ainsi qu’à Raus. Le mieux, dans un livre comme le vôtre,
+                serait, je crois, de renvoyer à ce dernier auteur qui donne dans sa
+                    <title>Real-Encyclopädie der christkichen Altchümer</title>, Fribourg en
+                Brisgau, 1882, 8°-, t.I, p.660-664, une sorte de facsimilé de l’inscriptions
+                accompagné d’une transcription et d’un dessin représentant la statue.</p>
+
+            <p>Heureux d’être entré en relations épistolaires avec vous, j’espère que vous voudrez
+                bien nous adresser à moi en toute autre circonstance analogue à celle-ci, et je vous
+                prie d’agréer, pour vous et votre famille, les meilleurs vœux de nouvelle année
+                de</p>
+
+            <closer>
+                <salute>Votre élève dévoué,</salute>
+                <signed>Léon Dorez</signed>
+            </closer>
+        </body>
+    </text>
+</TEI>

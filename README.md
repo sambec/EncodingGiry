@@ -7,7 +7,7 @@ Welcome to this repository, which aims to preserve and showcase the scholarly co
 
 Arthur Giry, a renowned French historian and paleographer, played a key role in the development of **diplomatics**, the critical study of historical documents. His book, *Manuel de diplomatique*, remains an essential reference in the field. Throughout the years leading up to its publication, Giry corresponded with many scholars, researchers, and former students who provided critical insights and resources to aid in his research.
 
-This repository contains XML-encoded transcriptions of letters Giry received, highlighting the intellectual exchanges that contributed to the **formation of his ideas** and **methodological advancements** in diplomatics.
+This repository contains XML-encoded transcriptions of letters Giry received in french 🇫🇷, highlighting the intellectual exchanges that contributed to the **formation of his ideas** and **methodological advancements** in diplomatics.
 
 ## 💡 Objectives of this Project
 

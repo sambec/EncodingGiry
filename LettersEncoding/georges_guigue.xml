@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- <!DOCTYPE TEI SYSTEM "EncodedLetters.dtd"> -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettre de Georges Guigue à Arthur Giry concernant la constitution du Manuel
+                    de Diplomatique (1894)</title>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Sarah Ambec</distributor>
+                <date>Octobre 2024</date>
+                <availability>
+                    <licence>This file is available under a Creative Commons Attribution 4.0
+                        licence: <ref type="url"
+                            target="https://creativecommons.org/licenses/by/4.0/deed.en"
+                            >https://creativecommons.org/licenses/by/4.0/deed.en</ref>. </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <institution>Archives Nationales</institution>
+                        <idno>93AJ/264</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>This transcription was created by <persName>Sarah Ambec</persName> in
+                    <date>2019</date> for her master’s thesis, a biography of <persName>Arthur
+                    Giry</persName>, written at <orgName ref="https://www.sorbonne-universite.fr/"
+                    >Sorbonne University</orgName>, Paris. The letters have now been encoded in XML
+                in <date>2024</date> as part of a digital humanities project at <orgName
+                    ref="https://www.chartes.psl.eu/">École nationale des chartes -
+                PSL</orgName>.</p>
+        </encodingDesc>
+
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>Georges Guigue</persName>
+                    <placeName>Lyon</placeName>
+                    <date when="1890-05-20"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>Arthur Giry</persName>
+                    <placeName>Paris</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+
+    </teiHeader>
+    <text>
+        <body>
+            <head> Papier à lettre des Archives départementales de la préfecture du Rhône </head>
+            <opener>
+                <dateline><placeName>Lyon</placeName>, le 20 mai 1890</dateline>
+                <salute>Mon cher maître,</salute>
+            </opener>
+            <p>Je suis en retard comme toujours, vous ne sauriez vous imaginer combien je suis pris
+                dans ma nouvelle et grande boîte, ce qu’il faut de dimanche et de mouvement pour
+                arriver à une collection définitive grâce à notre illustre architecte, et le
+                reste.</p>
+            <p>Bref, il me reste juste 80 exemplaires de l’<title>Obituaire de St Jean</title> dont
+                un grand papier, le seul libraire qui en ait encore est Ebrain et ce n’est que 6 ou
+                7 qu’il me cèdera certainement si je les lui demande comme cela 6, avec le monopole.
+                Enfin faites ce que vous jugerez bon, ce sera bien fait.</p>
+            <p>La maladie de ma femme dont je vous parlais si peu de cette satanée ménose si
+                fréquente maintenant, elle s’était un peu surmenée avec les enfants et du jours au
+                lendemain se sont […] les axes qu’il a fallu […] énergiquement; j’ai eu là moi aussi
+                une fière secousse morale, enfin le docteur aidant tout est pour le mieux et ma
+                belle mère une des causes aussi un peu assagie. </p>
+            <p>Je n’ai rien de rien pour le commencement de l’année, en Lyonnais c’est Pâques je ne
+                suis pas encore arrivé à mettre la main sur l’exception que pourtant je soupçonne.
+                Par contre quelques dates de saints varient comme la Sainte Marguerite que vous
+                trouverez dans les <title>Tard-Venus</title>pour l’incendie de Mathison; je
+                soupçonne aussi sainte Madeleine de s’étendre un peu, mais ne suis pas arrivé à
+                mettre la main sur une preuve décisive. .</p>
+            <p> Savez-vous qq. chose de Montmarte? Il y a un an que j’avais avec à D’un nouveau
+                cadre pour la rédaction de l’inventaire avec le premier envoi de copie et il attend
+                la 10° bonne feuille pour s'en apercevoir, il demande maintenant pourquoi je n’ai
+                pas suivi le premier qui lui était adressé avant la rédaction. Et de Rozière? Voilà
+                bien longtemps que je n’ai eu de nouvelles de Bellemain j’attendais toujours le
+                résultat de cette fichue commission pour lui écrire, si cette demande peut passer
+                j’espère avoir bientôt une bonne coude par Millard , notre sénateur, à qui j’ai eu
+                l’occasion de fournir qq. notes pour l’affaire Carnot. Dans les papiers de la cour
+                j’ai en effet mis la main sur la correspondance de Villeroy et autres au marquis de
+                Rochehanne bientandre gaunemen du Lyonnais, vous voyez d’ici ce qu’il peut y avoir
+                pour l’histoire du régime de Lyonnais dont est M.Carnot. Pour mon compte j’aimerais
+                mieux en tirer un volume pour les documents inédits, mais il faudrait encore des
+                démarches, et pour le moment il y en a bien assez de toutes celles que je suis
+                obligé de faire et que je vous demande aussi à vous ami, pour ma mère. Vous voyez
+                toute ma misère, je bavarde et la besogne marche.</p>
+            <closer>
+                <salute>Merci et de tout coeur votre </salute>
+                <signed>Georges Guigue</signed>
+            </closer>
+            <postscript>
+                <p> Vous ai-je dis que le second volume du <title>Cartulaire Lyonnais</title> est en
+                    route je le parle jeudi complet à l’[...] encore une fameuse table à autre chose
+                    … toujours sans le cours je déniche ça et là les papiers de chevaliers de
+                    Cogolin, correspondant de Voltaire, Fiesdente il est autres, il y a là une
+                    suivie d'articles lus au mieux si vous avez qq. embarrassant à une revue
+                    quelconque je vous les adresserai. L’édition des lettres de Catherine est bien
+                    sérieuse, je leur ai envoyé un passage de notes et je ne sais si elles sont
+                    arrivés si les sénateurs, en tout cas j’ai été bien sot de lui faire tenir mes
+                    18 lettres sans se pas le ministère. J’écris aujourd’hui aussi à Montaiglon mais
+                    une lettre effarante j’ai eu la sottise de montrer le dessin original de
+                    benisson à M.Rondat, et il ne le chisse malgrè la parole donnée, enfin cela fera
+                    peut-être comme la peste. Est ce bête ces histoires et pourtant elles sont
+                    journalières. </p>
+            </postscript>
+        </body>
+    </text>
+</TEI>
