@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT TEI (teiHeader, text)>
+<!ATTLIST TEI
+  xmlns CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+
+<!-- This is where the metadata are -->
+<!ELEMENT teiHeader (fileDesc, encodingDesc, profileDesc)>
+<!-- This is where I introduce this xml file -->
+<!ELEMENT fileDesc (titleStmt, publicationStmt, sourceDesc)>
+<!ELEMENT titleStmt (title)>
+<!ELEMENT publicationStmt (distributor, date, availability)>
+<!ELEMENT sourceDesc (msDesc)>
+<!ELEMENT msDesc (msIdentifier)>
+<!ELEMENT msIdentifier (settlement, institution, idno)>
+<!-- This is where I explain where the transcription comes from -->
+<!ELEMENT encodingDesc (p)>
+<!ELEMENT p (#PCDATA | date | persName | title | orgName)*>
+<!-- This is where I present the letter -->
+<!ELEMENT profileDesc (correspDesc)>
+<!ELEMENT correspDesc (correspAction+)>
+<!ELEMENT correspAction (persName, placeName, date?)>
+<!ATTLIST correspAction
+  type (sent | received) #REQUIRED>
+
+<!-- This is where the letter is -->
+<!ELEMENT text (body)>
+<!ELEMENT body (head, opener, p+, closer, postscript)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT opener (dateline, salute)>
+<!ELEMENT dateline (#PCDATA | placeName)*>
+<!ELEMENT closer (salute, signed)>
+<!ELEMENT signed (#PCDATA)>
+<!ELEMENT postscript (p)+>
+
+<!-- This is to avoid defining an element multiple times -->
+<!ELEMENT availability (licence)>
+<!ELEMENT distributor (#PCDATA)>
+<!ELEMENT licence (#PCDATA | ref)*>
+
+
+<!ELEMENT settlement (#PCDATA)>
+<!ELEMENT institution (#PCDATA)>
+<!ELEMENT idno (#PCDATA)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date
+  when CDATA #IMPLIED>
+
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref
+  target CDATA #REQUIRED
+  type (url | other) #REQUIRED>
+
+<!ELEMENT persName (#PCDATA)>
+<!ELEMENT placeName (#PCDATA)>
+<!ELEMENT orgName (#PCDATA)>
+<!ATTLIST orgName
+  ref CDATA #REQUIRED>
+
+<!ELEMENT salute (#PCDATA)>

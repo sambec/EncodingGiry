@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "Template.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lettre de Georges Guigue à Arthur Giry concernant la constitution du Manuel
+                    de Diplomatique (1894)</title>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Sarah Ambec</distributor>
+                <date>Octobre 2024</date>
+                <availability>
+                    <licence>This file is available under a Creative Commons Attribution 4.0
+                        licence: <ref type="url"
+                            target="https://creativecommons.org/licenses/by/4.0/deed.en"
+                            >https://creativecommons.org/licenses/by/4.0/deed.en</ref>. </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <institution>Archives Nationales</institution>
+                        <idno>93AJ/264</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>This transcription was created by <persName>Sarah Ambec</persName> in
+                    <date>2019</date> for her master’s thesis, a biography of <persName>Arthur
+                    Giry</persName>, written at <orgName ref="https://www.sorbonne-universite.fr/"
+                    >Sorbonne University</orgName>, Paris. The letters have now been encoded in XML
+                in <date>2024</date> as part of a digital humanities project at <orgName
+                    ref="https://www.chartes.psl.eu/">École nationale des chartes -
+                PSL</orgName>.</p>
+        </encodingDesc>
+
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>Georges Guigue</persName>
+                    <placeName>Lyon</placeName>
+                    <date when="1890-05-20"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>Arthur Giry</persName>
+                    <placeName>Paris</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+
+    </teiHeader>
+    <text>
+        <body>
+            <head> Papier à lettre des Archives départementales de la préfecture du Rhône </head>
+            <opener>
+                <dateline><placeName>Lyon</placeName>, le 20 mai 1890</dateline>
+                <salute>Mon cher maître,</salute>
+            </opener>
+            <p>Je suis en retard comme toujours.</p>
+            <p> Savez-vous qq. chose de Montmarte?</p>
+            <closer>
+                <salute>Merci et de tout coeur votre </salute>
+                <signed>Georges Guigue</signed>
+            </closer>
+            <postscript>
+                <p> Vous ai-je dis que le second volume du <title>Cartulaire Lyonnais</title> est en
+                    route je le parle jeudi complet.</p>
+            </postscript>
+        </body>
+    </text>
+</TEI>
