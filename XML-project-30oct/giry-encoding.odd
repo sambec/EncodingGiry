@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ODD for Encoding Arthur Giry's Correspondence</title>
+            <author>Sarah Ambec</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Generated for the project on Arthur Giry's letters, encoded in TEI XML.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Custom schema derived from TEI base modules to encode metadata and text structure for correspondence.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<!-- Schema Specifications -->
+   <text>
+      <body>
+         <schemaSpec ident="giry_correspondence" start="TEI">
+            <moduleRef key="tei"/> <!-- Core TEI Module -->
+            <moduleRef key="corresp"/> <!-- Correspondence Module -->
+            <moduleRef key="msdescription"/> <!-- Manuscript Description Module -->
+
+            <!-- Custom Rules -->
+            
+            <!-- Correspondence Metadata -->
+            <elementSpec ident="correspAction" mode="change">
+               <attList>
+                  <attDef ident="type">
+                     <datatype>
+                        <valList>
+                           <valItem ident="sent"/>
+                           <valItem ident="received"/>
+                        </valList>
+                     </datatype>
+                     <desc>Specifies whether the correspondence was sent or received.</desc>
+                  </attDef>
+               </attList>
+               <desc>Defines actions in the correspondence, such as "sent" or "received".</desc>
+            </elementSpec>
+
+            <!-- Letter Metadata -->
+            <elementSpec ident="msDesc" mode="change">
+               <content>
+                  <seq>
+                     <elementRef key="msIdentifier"/>
+                  </seq>
+               </content>
+               <desc>Encodes metadata about the manuscript.</desc>
+            </elementSpec>
+
+            <elementSpec ident="msIdentifier" mode="change">
+               <content>
+                  <seq>
+                     <elementRef key="settlement"/>
+                     <elementRef key="institution"/>
+                     <elementRef key="idno"/>
+                  </seq>
+               </content>
+               <desc>Encodes identifiers for the manuscript, including settlement, institution, and ID number.</desc>
+            </elementSpec>
+
+            <!-- People and Places -->
+            <elementSpec ident="persName" mode="change">
+               <attList>
+                  <attDef ident="ref">
+                     <datatype>
+                        <data type="anyURI"/>
+                     </datatype>
+                     <desc>References an external identifier for the person, such as Wikidata or archival resources.</desc>
+                  </attDef>
+               </attList>
+               <desc>Encodes the name of a person in the correspondence.</desc>
+            </elementSpec>
+
+            <elementSpec ident="placeName" mode="change">
+               <attList>
+                  <attDef ident="ref">
+                     <datatype>
+                        <data type="anyURI"/>
+                     </datatype>
+                     <desc>References an external identifier for the place.</desc>
+                  </attDef>
+               </attList>
+               <desc>Encodes the name of a place in the correspondence.</desc>
+            </elementSpec>
+
+            <!-- Custom Constraints -->
+            <constraint>
+               <schematron> <!-- schematron should be wrote by hand -->
+                  <!-- Constraint 1: Every persName in correspAction must have @ref -->
+                  <rule context="correspAction/persName">
+                     <assert test="@ref">Each <persName> within <correspAction> must have a @ref attribute.</assert>
+                  </rule>
+                  <!-- Constraint 2: correspDesc must have at least one correspAction -->
+                  <rule context="correspDesc">
+                     <assert test="correspAction">A <correspDesc> element must contain at least one <correspAction>.</assert>
+                  </rule>
+               </schematron>
+            </constraint>
+
+            <!-- Other Structural Definitions -->
+            <elementSpec ident="correspDesc" mode="change">
+               <content>
+                  <seq>
+                     <elementRef key="correspAction" minOccurs="1"/>
+                     <choice>
+                        <elementRef key="listPerson"/>
+                        <elementRef key="note"/>
+                     </choice>
+                  </seq>
+               </content>
+               <desc>Encodes correspondence metadata, starting with one or more <correspAction> elements, optionally followed by <listPerson> or <note>.</desc>
+            </elementSpec>
+         </schemaSpec>
+      </body>
+   </text>
+</TEI>

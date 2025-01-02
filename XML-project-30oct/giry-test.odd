@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "Template.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <!-- Step 1: teiHeader -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ODD Customization for Encoding Arthur Giry's Letters</title>
+            <author>Your Name</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Generated as part of a project on the scholarly correspondence of Arthur Giry.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>This ODD file customizes TEI for encoding letters received by Arthur Giry during his research for the Manuel de diplomatique.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+   <!-- Step 2: Schema Specifications -->
+   <text>
+      <body>
+         <schemaSpec ident="giry_correspondence" start="TEI">
+            <moduleRef key="tei"/> <!-- Core TEI Module -->
+            <moduleRef key="corresp"/> <!-- Correspondence Module -->
+            <moduleRef key="msdescription"/> <!-- Manuscript Description Module -->
+
+            <!-- Step 3: Custom Rules -->
+
+            <!-- Rule 1: Constrain Attribute Values -->
+            <elementSpec ident="correspAction" mode="change">
+               <attList>
+                  <attDef ident="type">
+                     <datatype>
+                        <valList>
+                           <valItem ident="sent"/>
+                           <valItem ident="received"/>
+                        </valList>
+                     </datatype>
+                     <desc>Specifies whether the correspondence was sent or received.</desc>
+                  </attDef>
+               </attList>
+               <desc>Defines actions in the correspondence, such as "sent" or "received".</desc>
+            </elementSpec>
+
+            <!-- Rule 2: Constrain Content Sequence -->
+            <elementSpec ident="correspDesc" mode="change">
+               <content>
+                  <seq>
+                     <elementRef key="correspAction" minOccurs="1"/>
+                     <choice>
+                        <elementRef key="listPerson"/>
+                        <elementRef key="note"/>
+                     </choice>
+                  </seq>
+               </content>
+               <desc>Structure for correspondence metadata: starts with one or more correspAction elements, optionally followed by listPerson or note.</desc>
+            </elementSpec>'
+
+            <!-- Rule 3: Contextual Constraint -->
+            <constraint>
+               <schematron>
+                  <rule context="correspAction/persName">
+                     <assert test="@ref">Each persName within correspAction must have a @ref attribute linking to an external resource.</assert>
+                  </rule>
+               </schematron>
+            </constraint>
+
+            <!-- Documenting Choices -->
+            <elementSpec ident="persName" mode="change">
+               <attList>
+                  <attDef ident="ref">
+                     <datatype>
+                        <data type="anyURI"/>
+                     </datatype>
+                     <desc>Links the person to an external identifier, e.g., Wikidata or archival resource.</desc>
+                  </attDef>
+               </attList>
+               <desc>The persName element encodes the name of a person, with an optional reference to an external identifier.</desc>
+            </elementSpec>
+         </schemaSpec>
+      </body>
+   </text>
+</TEI>

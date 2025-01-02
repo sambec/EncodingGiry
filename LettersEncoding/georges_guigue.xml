@@ -43,12 +43,12 @@
         <profileDesc>
             <correspDesc>
                 <correspAction type="sent">
-                    <persName>Georges Guigue</persName>
+                    <persName  ref="#GeorgesGuigue">Georges Guigue</persName>
                     <placeName>Lyon</placeName>
                     <date when="1890-05-20"/>
                 </correspAction>
                 <correspAction type="received">
-                    <persName>Arthur Giry</persName>
+                    <persName ref="#ArthurGiry">Arthur Giry</persName>
                     <placeName>Paris</placeName>
                 </correspAction>
             </correspDesc>
