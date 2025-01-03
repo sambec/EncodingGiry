@@ -3,13 +3,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="short">oddbyexample</title>
-            <title>ODD by Example customization</title>
+            <title>ODD for Encoding Arthur Giry's Correspondence</title>
+            <author>Sarah Ambec</author>         
          </titleStmt>
          <publicationStmt>
-            <p>Unpublished first draft </p>
+            <p>Generated for the project on Arthur Giry's letters, encoded in TEI XML</p>
          </publicationStmt>
          <sourceDesc>
+            <p>Custom schema derived from TEI base modules to encode metadata and text structure for correspondence.</p>
             <p>Derived from <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 3 files in /home/sarah/Documents/EncodingGiry/LettersEncoding</p>
          </sourceDesc>
       </fileDesc>
