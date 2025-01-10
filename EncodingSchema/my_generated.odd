@@ -18,6 +18,55 @@
    <text>
       <body>
          <schemaSpec ident="oddbyexample" start="TEI ">
+         <!-- Define at least 3 rules for the Assignement -->
+
+            <!-- Rule 1: Constraining the use of an attribute and its value(s) -->
+            <elementSpec ident="correspAction" mode="change">
+               <attList>
+                  <attDef ident="type">
+                     <datatype>
+                        <valList>
+                           <valItem ident="sent"/>
+                           <valItem ident="received"/>
+                        </valList>
+                     </datatype>
+                     <desc>Specifies whether the action is "sent" or "received".</desc>
+                  </attDef>
+               </attList>
+            </elementSpec>
+
+            <!-- Rule 2: Constraining the sequence of certain elements -->
+            <elementSpec ident="correspDesc" mode="change">
+               <content>
+                  <seq>
+                     <elementRef key="correspAction" minOccurs="1"/>
+                     <choice>
+                        <elementRef key="listPerson"/>
+                        <elementRef key="note"/>
+                     </choice>
+                  </seq>
+               </content>
+               <desc>
+                  A correspDesc must contain at least one correspAction, optionally followed by a listPerson or note.
+               </desc>
+            </elementSpec>
+
+            <!-- Rule 3: Constraining the value of an attribute based on its environment -->
+            <elementSpec ident="correspAction" mode="change">
+               <constraintSpec ident="persNameHasRef" scheme="schematron" type="SSK">
+                  <constraint>
+                     <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+                     <sch:rule context="tei:correspAction/tei:persName">
+                        <sch:assert test="@ref" role="error">
+                           Each persName within correspAction must have a @ref attribute.
+                        </sch:assert>
+                     </sch:rule>
+                     </sch:schema>
+                  </constraint>
+               </constraintSpec>
+            </elementSpec>
+            <!--End of me messing up with this ODD-->
+
             <moduleRef key="tei"/>
             <!--Checking module textcrit-->
             <classRef key="att.textCritical"/>
@@ -342,8 +391,10 @@
                         <valItem ident="received"/>
                         <valItem ident="sent"/>
                      </valList>
+                     <desc>Specifies whether the correspondence was sent or received.</desc>
                   </attDef>
                </attList>
+               <desc>Defines actions in the correspondence, such as "sent" or "received".</desc>
             </elementSpec>
             <!--Checking module gaiji-->
             <classRef key="att.gaijiProp"/>

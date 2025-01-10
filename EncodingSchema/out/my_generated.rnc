@@ -7,7 +7,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2025-01-03T22:21:17Z. .
+# Schema generated from ODD source 2025-01-10T16:25:10Z. .
 # TEI Edition: Version 4.3.0. Last updated on
 #         31st August 2021, revision b4f72b1ff
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0/
@@ -678,9 +678,6 @@ model.teiHeaderPart = encodingDesc | profileDesc
 model.sourceDescPart = notAllowed
 model.encodingDescPart = notAllowed
 model.profileDescPart = correspDesc
-model.correspActionPart =
-  model.dateLike | model.addressLike | model.nameLike
-model.correspDescPart = correspAction
 model.resource = \text
 p =
   
@@ -1254,9 +1251,9 @@ profileDesc =
 correspDesc =
   
   ## (correspondence
-  ##     description) contains a description of the actions related to one act of correspondence. [2.4.6. Correspondence Description]
+  ##     description) A correspDesc must contain at least one correspAction, optionally followed by a listPerson or note.  [2.4.6. Correspondence Description]
   element correspDesc {
-    (model.correspDescPart+ | model.pLike+),
+    empty,
     att.global.attributes,
     
     ## indicates whether or not this element is selected by default when its parent is selected.
@@ -1265,25 +1262,6 @@ correspDesc =
       
       ##
       "false"
-    }?,
-    empty
-  }
-correspAction =
-  
-  ## (correspondence action) contains a structured description of the place, the name of a person/organization and the date related to the sending/receiving of a message or any other action related to the correspondence. [2.4.6. Correspondence Description]
-  element correspAction {
-    (model.correspActionPart+ | model.pLike+),
-    att.global.attributes,
-    att.sortable.attributes,
-    
-    ## describes the nature of the action.
-    attribute type {
-      
-      ##
-      "received"
-      | 
-        ##
-        "sent"
     }?,
     empty
   }
