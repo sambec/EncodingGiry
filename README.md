@@ -1,7 +1,7 @@
 
 # 📜 Arthur Giry's Correspondence: Letters from Colleagues and Students Across Europe
 
-Welcome to this repository, which aims to preserve and showcase the scholarly correspondence received by **Arthur Giry** from his colleagues and former students across Europe. This project focuses on the letters sent to Giry as part of his research for his monumental work, **"Manuel de diplomatique"** published in 1894.
+Welcome to this repository, which aims to preserve and showcase the scholarly correspondence received by **Arthur Giry** from his colleagues and former students across Europe. This project focuses on the letters sent to Giry as part of his research for his monumental work, *Manuel de diplomatique* published in 1894.
 
 ## 📝 Project Overview
 
@@ -19,27 +19,77 @@ The purpose of this project is to:
 
 ## 📂 Repository Structure
 
-- **`/LettersEncoding/`**: This folder contains the XML-encoded letters received by Arthur Giry.
-  - Each file represents a single letter encoded in XML following TEI (Text Encoding Initiative) guidelines.
-  - Example: `theophile_dufour.xml` would represent a letter sent to Arthur Giry by Théophile Dufour.
-  
-- **`/EncodingSchema/`**: This folder contains the DTD and schema definitions used for encoding the XML files.
-  - Example: `giry_correspondence.dtd`
+```plaintext
+📦 Arthur-Giry-Correspondence/
+│
+├── 📂 EncodingSchema/            # Schema and transformation files for encoding
+│   ├── my_generated.html         # HTML output generated from the ODD file
+│   ├── my_generated.odd          # Main ODD customization file
+│   ├── odd2relaxng.xsl           # XSLT stylesheet for ODD to RNG conversion
+│   ├── oddbyexample.xsl          # XSLT stylesheet for generating ODD by example
+│   ├── template.dtd              # Base DTD template for XML validation
+│   ├── template.xml              # XML template for encoding
+│   ├── transform.xsl             # XSLT stylesheet for transformations
+│   ├── transformation-html.py    # Python script for HTML transformation
+│   └── transformation-odd.py     # Python script for ODD transformation
+│
+├── 📂 LettersEncoding/           # Encoded letters following TEI guidelines
+│   ├── georges_guigue.xml        # Letter from Georges Guigue
+│   ├── leon_dorez.xml            # Letter from Léon Dorez
+│   └── theophile_dufour.xml      # Letter from Théophile Dufour
+│
+├── 📂 Resources/                 # Supporting materials and resources
+│   ├── LettersDigital/           # Digitized scans of the letters
+│   ├── LettersTranscription/     # Transcriptions of the letters
+│   └── XML-project-30oct/        # Additional XML-related resources
+│
+├── LICENSE                       # License for the project
+└── README.md                     # Documentation of the repository
+```
 
-- **`/Resources/`**: Supporting materials, such as the digitized scans of the letters, bibliography, and further readings about Giry's work.
+### **`EncodingSchema/`**  
+Contains all resources related to the encoding schema:  
 
-## ⚙️ Encoding Standards
+- **`giry_correspondence.dtd`**: Defines the DTD used to encode Giry’s correspondence.  
+- **`my_generated.odd`**: ODD file defining custom encoding rules.  
+- **`transform.xsl`**: Transformation file for converting XML into other formats.  
+- **Support files**: Includes templates (`template.dtd`, `template.xml`) and auxiliary scripts (`transformation-odd.py`, `transformation-html.py`) for encoding and processing.  
 
-All letters in this repository are encoded in **XML** using the **TEI guidelines** to ensure accurate representation of the structure and content of the original documents. The encoding includes:
-- Metadata about the sender, recipient, date, and location.
-- The full transcription of each letter.
-- Annotations to provide context for historical figures, places, and key concepts mentioned in the correspondence.
+### **`LettersEncoding/`**  
+This folder contains XML-encoded letters, adhering to TEI guidelines:  
+
+- **`georges_guigue.xml`**: A letter from Georges Guigue.  
+- **`leon_dorez.xml`**: A letter from Léon Dorez.  
+- **`theophile_dufour.xml`**: A letter from Théophile Dufour.  
+
+Each letter includes metadata (sender, recipient, date) and a full transcription.  
+
+### **`Resources/`**  
+Contains supplementary materials:  
+
+- **`LettersDigital/`**: Digitized scans of the original letters.  
+- **`LettersTranscription/`**: Text-based transcriptions of the letters.  
+- **`XML-project-30oct/`**: Additional reference files and working drafts.  
+
+---
+
+## ⚙️ Encoding Standards  
+
+All letters in this repository are encoded in XML following the TEI (Text Encoding Initiative) guidelines. Key features include:  
+
+- **Metadata**: Sender, recipient, date, and location information.  
+- **Letter transcription**: Complete text of each letter.  
+- **Annotations**: Notes on historical figures, places, and key concepts.  
+
+Validation is performed using:  
+- RelaxNG schema generated from the ODD file.  
+- Schematron rules to enforce additional constraints (e.g., mandatory attributes).  
 
 ## 🛠️ How to Use This Repository
 
 1. **Browse the XML files** to read through the encoded letters.
 2. **Download and parse** the XML data for further research or integration with digital humanities projects.
-<!-- 3. Use the **schema** in the `/schema/` folder to validate the structure of the XML files or extend the encoding framework for your own research. -->
+3. **Use schema files**: Refer to the **`EncodingSchema/`** folder for encoding and validation rules.  
 
 ## 🏛️ Historical Significance
 
