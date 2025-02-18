@@ -17,6 +17,14 @@ The purpose of this project is to:
 3. **Facilitate analysis**: Using XML to structure the content enables thematic and contextual analysis, which can support deeper research into Giry's contributions to history and diplomatics.
 4. **Provide open access**: All XML files are published under an open license to encourage further research and academic use.
 
+## 🌐 Live Version
+
+The HTML version of the project has been deployed on **GitHub Pages** via the **`web` branch**. You can view it here:
+
+🔗 **Live Website**: [sambec.github.io/EncodingGiry/](https://sambec.github.io/EncodingGiry/)
+
+This site allows you to navigate between the different letters and access the index of available correspondence.
+
 ## 📂 Repository Structure
 
 ```plaintext
@@ -84,6 +92,26 @@ All letters in this repository are encoded in XML following the TEI (Text Encodi
 Validation is performed using:  
 - RelaxNG schema generated from the ODD file.  
 - Schematron rules to enforce additional constraints (e.g., mandatory attributes).  
+
+## 🖥️ XSLT Transformation to HTML
+
+To make the **encoded letters easily readable**, we use an **XSLT transformation** to convert the XML files into well-formatted HTML pages.
+
+### Key Features:
+✅ Extracts **metadata** (title, sender, recipient, date, place).  
+✅ Converts TEI `<title>` tags into **italicized book titles**.  
+✅ Adds **navigation links** between letters and to the index.  
+✅ Generates a **modern and clean HTML layout**, suitable for an academic digital edition.  
+✅ Deploys the **HTML output to GitHub Pages**.
+
+Example transformation:
+```xml
+<p>Je vous envoie l’ouvrage <title>Manuel de diplomatique</title> dont vous m’avez parlé.</p>
+```
+➡ Becomes:
+```html
+<p>Je vous envoie l’ouvrage <em>Manuel de diplomatique</em> dont vous m’avez parlé.</p>
+```
 
 ## 🛠️ How to Use This Repository
 
